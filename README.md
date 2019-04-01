@@ -298,6 +298,10 @@ If all components get deployed without any error, the following command will sho
 ```console
 $ docker stack services elk
 ```
+### To change the name of the stack
 
+```console
+env CLUSTER_NAME="docker-cluster-dev" docker stack deploy -c docker-stack.yml elk-dev
+```
 **NOTE:** to scale Elasticsearch in Swarm mode, configure *zen* to use the DNS name `tasks.elasticsearch` instead of
 `elasticsearch`.
