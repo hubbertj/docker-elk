@@ -15,6 +15,7 @@ services:
       discovery.type: zen
       discovery.zen.ping.unicast.hosts: tasks.elasticsearch
       node.max_local_storage_nodes: 2
+      cluster.name: $CLUSTER_NAME
     volumes:
       - elk_stack_data:/usr/share/elasticsearch/data
     networks:
