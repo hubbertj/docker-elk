@@ -40,10 +40,10 @@ configs:
 
   elastic_config:
     file: ./elasticsearch/config/elasticsearch.yml
-  logstash_config:
-    file: ./logstash/config/logstash.yml
-  logstash_pipeline:
-    file: ./logstash/pipeline/logstash.conf
+  #logstash_config:
+    #file: ./logstash/config/logstash.yml
+  #logstash_pipeline:
+    #file: ./logstash/pipeline/logstash.conf
   kibana_config:
     file: ./kibana/config/kibana.yml
 
