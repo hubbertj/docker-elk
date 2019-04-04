@@ -14,7 +14,7 @@ services:
       ES_JAVA_OPTS: "-Xmx256m -Xms256m"
       discovery.type: zen
       discovery.zen.ping.unicast.hosts: tasks.elasticsearch
-      node.max_local_storage_nodes: 2
+      node.max_local_storage_nodes: 10
       cluster.name: $CLUSTER_NAME
       ELASTIC_PASSWORD: ops100!
     volumes:
