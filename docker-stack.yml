@@ -3,7 +3,7 @@ version: '3.3'
 services:
 
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.6.1
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.6.1
     ports:
       - "9200"
       - "9300"
@@ -16,6 +16,7 @@ services:
       discovery.zen.ping.unicast.hosts: tasks.elasticsearch
       node.max_local_storage_nodes: 2
       cluster.name: $CLUSTER_NAME
+      ELASTIC_PASSWORD: ops100!
     volumes:
       - elk_stack_data:/usr/share/elasticsearch/data
     networks:

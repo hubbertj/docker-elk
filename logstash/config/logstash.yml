@@ -4,3 +4,8 @@
 #
 http.host: "0.0.0.0"
 path.config: /usr/share/logstash/pipeline
+xpack.monitoring.elasticsearch.url: http://elasticsearch:9200
+
+## X-Pack security credentials
+xpack.monitoring.elasticsearch.username: opsadmin
+xpack.monitoring.elasticsearch.password: ops100! 
