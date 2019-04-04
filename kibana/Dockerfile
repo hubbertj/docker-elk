@@ -22,4 +22,9 @@ RUN export JAVA_HOME
 # Add your kibana plugins setup here
 # Example: RUN kibana-plugin install <name|url>
 
+RUN kibana-plugin install license
 RUN kibana-plugin install kibana/reporting/latest
+
+
+
+
